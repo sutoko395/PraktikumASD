@@ -7,7 +7,7 @@ public class AntrianLayanan {
 
     public AntrianLayanan(int max) {
         this.max = max;
-        this.data = new Mahasiswa[max];
+        this.data = new Mahasiswa[max];  // Perbaikan inisialisasi array
         this.front = 0;
         this.rear = -1;
         this.size = 0;
@@ -46,11 +46,11 @@ public class AntrianLayanan {
     public void lihatTerdepan() {
         if (isEmpty()) {
             System.out.println("Antrian kosong.");
-        } else {
-            System.out.println("Mahasiswa terdepan:");
-            System.out.println("NIM - NAMA - PRODI - KELAS");
-            data[front].tampilkanData();
+            return;
         }
+        System.out.println("Mahasiswa terdepan:");
+        System.out.println("NIM - NAMA - PRODI - KELAS");
+        data[front].tampilkanData();
     }
 
     public void tampilkanSemua() {

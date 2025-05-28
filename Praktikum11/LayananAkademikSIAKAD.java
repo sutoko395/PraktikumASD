@@ -17,7 +17,7 @@ public class LayananAkademikSIAKAD {
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = sc.nextInt();
-            sc.nextLine();
+            sc.nextLine();  // Membersihkan newline
 
             switch (pilihan) {
                 case 1:

@@ -1,3 +1,5 @@
+import Praktikum15.Node;
+
 public class QueueLinkedList {
     Node front, rear;
     int size = 0;
