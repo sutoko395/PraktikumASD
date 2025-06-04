@@ -15,5 +15,12 @@ public class BinaryTreeArrayMain23 {
         bta.populateData(dataMahasiswas, idxLast);
         System.out.println("\nInorder Traversal Mahasiswa: ");
         bta.traverseInOrder(0);
-    }
+
+        // Tambah 1 mahasiswa lagi dengan method add
+        Mahasiswa23 mhs8 = new Mahasiswa23("244160199", "Gilang", "D", 3.58);
+        bta.add(mhs8);
+
+        System.out.println("\nPreOrder Traversal Mahasiswa: ");
+        bta.traversePreOrder(0);
+            }
 }
